@@ -1,0 +1,59 @@
+<!-- OM NAMASIVAYA -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Market</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Stock Market</h1>
+    </header>
+    <main id="main-container">
+      <section class="main-items" id="graph-container">
+        <div class="graph-items" id="graph">
+          <div class="info-tab">
+            <table>
+              <th>
+                <tr>
+                  <td></td>
+                  <td>max</td>
+                  <td>min</td>
+                </tr>
+              </th>
+              <th>
+                <tr>
+                  <td>date</td>
+                  <td id="max-date"></td>
+                  <td id="min-date"></td>
+                </tr>
+              </th>
+              <th>
+                <tr>
+                  <td>price</td>
+                  <td id="max-price"></td>
+                  <td id="min-price"></td>
+                </tr>
+              </th>
+            </table>
+          </div>
+        </div>
+        <div class="graph-items" id="graph-btn-container">
+          <button class="graph-btn" id="one-mon">1 Month</button>
+          <button class="graph-btn" id="three-mon">3 Month</button>
+          <button class="graph-btn" id="one-yer">1 Year</button>
+          <button class="graph-btn" id="five-yer">5 year</button>
+        </div>
+      </section>
+      <section class="main-items dis-container" id="display"></section>
+      <section class="main-items" id="summary">
+        <div class="summary-item" id="summ-head-Container"></div>
+        <div class="summary-item" id="summ-body"></div>
+      </section>
+    </main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>

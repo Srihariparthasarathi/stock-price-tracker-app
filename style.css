@@ -1,0 +1,145 @@
+/* OM NAMASIVAYA */
+
+/* letter- 1E201E
+    sub - 3C3D37
+    bg - 697565
+    container - ECDFCC
+ */
+
+ body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #697565;
+    color: #1E201E;
+ }
+
+ h1{
+    text-align: center;
+    margin-top: 0.5rem;
+ }
+
+ #main-container{
+    margin-top: 1rem;
+    padding: 0.25rem;
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    grid-template-rows: 70vh auto;
+    gap: 0.75rem;
+ }
+
+ .main-items{
+    background-color: #ECDFCC;
+    border-radius: 10px;
+    padding: 0.5rem;
+
+
+ }
+
+ #summary{
+    grid-column: span 2;
+ }
+
+ .dis-container{
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    align-items: center;
+    gap: 0.5rem;
+    overflow: auto;
+ }
+
+ .dis-container::-webkit-scrollbar {
+    display: none;
+  }
+
+ .dis-item{
+    display: flex;
+    background-color: #3C3D37;
+    width: 100%;
+    justify-content: space-between;
+    border-radius: 5px;
+    color: #ECDFCC;
+    
+ }
+
+ .dis-item p, .dis-item button{
+    padding: 0.25rem;
+    margin: 0px;
+ }
+
+ .dis-item button{
+    background-color: #697565;
+    border-radius: 5px;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    width: 70px;
+ }
+
+
+ #summ-head-Container{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+ }
+
+ #graph-container{
+    
+    padding: 0.25rem;
+    display: grid;
+    grid-template-rows: 9fr 1fr;
+    gap: .25rem;
+
+ }
+
+ .graph-items{
+    
+    border-radius: 10px;
+    padding: 0.25rem;
+    
+ }
+ #graph{
+    background-color: #1E201E;
+    position: relative;
+ }
+
+ .info-tab{
+    height: 80px;
+    width: 200px;
+    background-color: #ECDFCC;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    border-radius: 20px;
+    z-index: 1;
+    padding: 0.25rem;
+    text-align: center;
+ }
+
+ table{
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: 600;
+ }
+
+ th, td {
+    padding: .10rem;
+  }
+ 
+
+#graph-btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#graph-btn-container button{
+    width: 100px;
+    border-radius: 1rem;
+    background-color: #697565;
+    font-weight: 600;
+}
+
+.dis-item button:hover ,#graph-btn-container button:hover{
+    background-color: #1E201E;
+    color: #697565;
+ }
